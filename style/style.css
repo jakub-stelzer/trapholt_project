@@ -37,6 +37,10 @@ header {
   font-size: 17px;
 }
 
+.able {
+  margin-top: -3px;
+}
+
 .dropdown {
   overflow: hidden;
   width: 400px;
@@ -53,7 +57,15 @@ header {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  margin-top: 50px;
+  margin-top: 90px;
+}
+
+.dropdown :hover .disable {
+  display: block;
+}
+
+.dropdown :hover .able {
+  display: none;
 }
 
 .dropdown-content {
@@ -92,21 +104,26 @@ header {
 .swiper {
   width: 100%;
   height: 100%;
+  
+  background: #ebe3d3;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #ebe3d3;
+
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -114,12 +131,7 @@ header {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.mySwiper {
-  border: solid 3px black;
+  object-fit: cover;
 }
 
 /* style for different things in the third section */
@@ -163,6 +175,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: -290px;
 }
 
 .first-all img {
@@ -312,7 +325,6 @@ header {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-left: 12%;
 }
 
 .second-two-bot span {
@@ -528,7 +540,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 150px;
-  margin-left: 80px;
+  margin-left: 130px;
   width: 35%;
 }
 
@@ -541,7 +553,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 210px;
+  margin-left: 150px;
 }
 
 .third-one-bot {
@@ -676,6 +688,10 @@ header {
   height: 150px;
   margin-left: 80px;
   width: 35%;
+}
+
+.disable {
+  display: none;
 }
 
 .third-three-top-right {
@@ -1410,9 +1426,7 @@ header {
 .fifth-left {
   width: 21%;
   height: 100px;
-  background-color: white;
   margin-top: 300px;
-  border: solid black 1px;
 }
 
 .fifth-left a {
@@ -1438,10 +1452,8 @@ header {
 .fifth-right {
   width: 20%;
   height: 100px;
-  background-color: white;
   margin-top: 300px;
   margin-left: 3%;
-  border: solid black 1px;
 }
 
 .fifth-right h3 {
@@ -1454,8 +1466,8 @@ header {
   -ms-flex-item-align: center;
       align-self: center;
   margin-bottom: 10px;
-  font-family: "Coves";
-  font-size: 25px;
+  font-family: "Helvetica";
+  font-size: 23px;
 }
 
 form.example input[type=text] {
@@ -1583,6 +1595,8 @@ form.example button {
 .sixth-one-right-bot-top {
   height: 50%;
   width: 100%;
+  margin-left: -650px;
+  margin-top: 600px;
 }
 
 .sixth-one-right-bot-top img {
@@ -1726,11 +1740,12 @@ form.example button {
 ******************************************************************************************************************************************/
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  
   #first {
     height: 350px;
   }
   .first-all {
-    height: 300px;
+    height: 220px;
     width: 100%;
   }
   .first-all img {
@@ -1738,9 +1753,15 @@ form.example button {
     width: 700px;
     margin-top: 270px;
   }
+  .topnav{
+    height: 262px;
+  }
   .dropdown {
     margin-left: 540px;
     margin-top: -70px;
+  }
+  .dropdown .dropbtn {
+    margin-top: 50px;
   }
   .dropdown img {
     height: 100px;
@@ -1753,7 +1774,7 @@ form.example button {
     padding: 4px 6px;
   }
   #second {
-    height: 500px;
+    height: 170px;
     width: 100%;
   }
   .second-all {
@@ -2498,7 +2519,8 @@ form.example button {
     width: 40%;
     display: block;
   }
-  .sixth-one-right {
+  i
+.sixth-one-right {
     width: 30%;
     margin-left: -650px;
     margin-top: 600px;
@@ -2514,8 +2536,9 @@ form.example button {
     height: 350px;
     width: 475px;
   }
-  .disable {
+  .disable_phone {
     display: none;
   }
+
 }
 /*# sourceMappingURL=style.css.map */
